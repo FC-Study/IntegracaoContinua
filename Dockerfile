@@ -1,8 +1,8 @@
-FROM golang:latest
+FROM golang:1.15
 
 WORKDIR /app
 
-COPY . .
+COPY math.go .
 
 RUN go build -o math
 
